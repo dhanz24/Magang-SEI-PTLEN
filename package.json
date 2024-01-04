@@ -1,0 +1,19 @@
+{
+  "name": "tesmagang-ptlen",
+  "version": "1.0.0",
+  "description": "Aplikasi RestAPI dengan fitur post login, get user, dan post user. Aplikasi ini menggunakan express js nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhanz24/Magang-SEI-PTLEN.git"
+  },
+  "author": "kusdhani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhanz24/Magang-SEI-PTLEN/issues"
+  },
+  "homepage": "https://github.com/dhanz24/Magang-SEI-PTLEN#readme"
+}
