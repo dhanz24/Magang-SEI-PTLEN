@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Example</title>
+</head>
+<body>
+
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="performLogin()">Login</button>
+    </form>
+
+    <script>
+        async function performLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const url = 'http://localhost:8080/login';
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        username: username,
+                        password: password,
+                    }),
+                });
+
+                if (!response.ok) {
+                    throw new Error(HTTP error! Status: ${response.status});
+                }
+
+                const data = await response.json();
+                console.log(data);
+
+                // Handle the response data as needed (e.g., show a message, redirect, etc.)
+                // Note: This is a simple example, and you may want to implement more robust error handling.
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+            }
+        }
+    </script>
+
+</body>
+</html>

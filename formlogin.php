@@ -21,22 +21,23 @@
     <img id="bg" src="bg-asset.png"/>
     <img id="logo" src="PT SEI.png"/>
           
-    <form method="POST">
+    <form method="POST" >
     <div class="form-login">
     <div id="card">
       <h2>Log-in</h2>
       <div class="formulir">
         <div class="mb-3">
             <label>Username</label>
-            <input type="username" class="form-control" placeholder="Masukan username anda" name="username" required>
+            <input type="username" class="form-control" id="username" placeholder="Masukan username anda" name="username" required>
+
           </div>
 
           <div class="mb-3">
             <label>Password</label>
-            <input type="password" class="form-control" placeholder="Masukan password anda" name="password" required>
+            <input type="password" class="form-control" id="password" placeholder="Masukan password anda" name="password" required>
           </div>
 
-          <center><button type="submit" class="btn" onclick="login()">Login</button></center>
+          <center><button type="button" class="btn" onclick="login()">Login</button></center>
 
         </div>
       </div>
@@ -45,39 +46,46 @@
 
     <script>
     async function login() {
-      // Ambil nilai dari formulir
+
       const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
+            const password = document.getElementById('password').value;
 
-      // Buat objek data untuk dikirimkan ke API
-      const data = {
-        username: username,
-        password: password
-      };
+            const url = 'http://localhost:8080/login';
 
-      try {
-        // Kirim permintaan ke API menggunakan Fetch API
-        const response = await fetch('http://localhost:8080/Login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        });
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        username: username,
+                        password: password,
+                    }),
+                });
 
-        // Periksa status respons
-        if (response.ok) {
-          // Respons sukses, tambahkan logika keberhasilan di sini
-          console.log('Login berhasil!');
-        } else {
-          // Respons gagal, tambahkan logika kegagalan di sini
-          console.error('Login gagal!');
-        }
-      } catch (error) {
-        // Tangkap dan tangani kesalahan yang terjadi selama pengiriman
-        console.error('Error:', error);
-      }
-    }
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                console.log(data);
+
+                // Check if login was successful and log a success message
+                if (data.status === 'Success') {
+                    console.log('Login successful!');
+                    alert('Login Berhasil');
+                    window.location.href = 'tampil.php';
+                }
+
+                // Handle the response data as needed (e.g., show a message, redirect, etc.)
+                // Note: This is a simple example, and you may want to implement more robust error handling.
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+            }
+        }
+
   </script>
 
   </body>

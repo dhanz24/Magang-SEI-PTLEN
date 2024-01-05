@@ -21,17 +21,21 @@
 		<div class="formulir">
     <div class="mb-3">
         <label>Username</label>
-        <input type="text" class="form-control" placeholder="Masukan username" name="username" required>
+        <input type="text" class="form-control" placeholder="Masukan username" id="username" required>
       </div>
 
       <div class="mb-3">
         <label>Password</label>
-        <input type="text" class="form-control" placeholder="Masukan password" name="password" required>
+        <input type="text" class="form-control" placeholder="Masukan password" id="password" required>
       </div>
 
 	  <div class="mb-3">
-        <label>Level</label>
-        <input type="text" class="form-control" placeholder="Masukan level" name="level" required>
+        <label>Name</label>
+        <input type="text" class="form-control" placeholder="Masukan Nama" id="name" required>
+      </div>
+	  <div class="mb-3">
+        <label>Email</label>
+        <input type="text" class="form-control" placeholder="Masukan Email" id="email" required>
       </div>
 	</div>
 				<center><input class="btn-simpan" type="submit" value="SIMPAN"></center>
