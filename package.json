@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/dhanz24/Magang-SEI-PTLEN/issues"
   },
-  "homepage": "https://github.com/dhanz24/Magang-SEI-PTLEN#readme"
+  "homepage": "https://github.com/dhanz24/Magang-SEI-PTLEN#readme",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.5"
+  }
 }

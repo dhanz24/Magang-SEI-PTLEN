@@ -1,0 +1,157 @@
+
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+} 
+
+#formlogin {
+background: linear-gradient(12deg, #11A61B -24%, rgb(255, 255, 255) 65%);
+background-size: cover;
+background-repeat: repeat-x;
+}
+
+#tambah {
+  background: linear-gradient(12deg, #11A61B 0%, rgb(255, 255, 255) 100%);
+  background-size: cover;
+  background-repeat: repeat-y;
+  }
+
+#logo{
+  position: absolute;
+  width: 200px;
+  left: 50px;
+  top: 50px;
+}
+
+#bg{
+  position: fixed;
+  width: 1080px;
+  left: 0px;
+  bottom: -12px;
+
+}
+
+.head {
+  color: #fbfbfb;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  position: absolute;
+  padding: 64px;
+  font-size: 80px;
+  font-weight: 750;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.head img{
+  position: fixed;
+  width: 1000px;
+}
+
+.form-login {
+    margin-left: 280px;
+    padding-top: 65px;
+   }
+   
+   #card {
+    position: relative;
+           background: #fbfbfb;
+           border-radius: 14px;
+           box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.203);
+           height: 380px;
+           margin: 6rem auto 8.1rem auto;
+           width: 329px;
+           margin-right: 224px;
+   }
+
+   h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: rgb(34, 34, 34);
+    margin: 10px;
+    padding-top: 24px;
+   }
+   
+
+   .mb-3 {
+   margin: 10px; 
+   }
+   
+   .mb-3 label {
+       margin: 4px;
+       font-weight: 450;
+   }
+   
+   .formulir {
+       padding-top: 4px;
+   }
+  
+   
+   .btn {
+     background: linear-gradient(to bottom right, #11A61B, #4fff5b);
+     border-radius: 24px;
+     color: #FFFFFF;
+     cursor: pointer;
+     display: inline-block;
+     font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 2.3;
+     outline: transparent;
+     padding: 0 8.2rem;
+     margin-top: 10px;
+     text-align: center;
+     text-decoration: none;
+     transition: box-shadow .2s ease-in-out;
+     touch-action: manipulation;
+     white-space: nowrap;
+   }
+   
+   .btn:not([disabled]):focus {
+     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #11A61B , .125rem .125rem 1rem #4fff5b;
+   }
+   
+   .btn:not([disabled]):hover {
+     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #11A61B, .125rem .125rem 1rem #4fff5b;
+     color: #FFFFFF;     
+   }
+
+
+   #card-tambah {
+    position: static;
+           background: #fbfbfb;
+           border-radius: 14px;
+           box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.203);
+           height: 480px;
+           margin: 10.9rem auto 10.9rem auto;
+           width: 400px;
+           align-items: center;
+   }
+
+   .btn-simpan {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.3;
+    outline: transparent;
+    padding: 0 8.2rem;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  
+  .btn-simpan:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .btn-simpan:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
