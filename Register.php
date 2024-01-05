@@ -15,7 +15,7 @@
     <form id="userForm" method="post" action="inputuser.php">
         <div class="form-tambah">
             <div id="card-tambah">
-                <h2>Tambahkan Data Pengguna</h2>
+                <h2>Registrasi Pengguna</h2>
                 <table>
                     <div class="formulir">
                         <div class="mb-3">
@@ -41,7 +41,7 @@
                     <tr>
                         <td></td>
                         <td><input class="btn-simpan" type="button" value="SIMPAN" onclick="addUser()"></td>
-                        <td><a href="tampil.php">Kembali</a></td>
+                        <td><a href="formlogin.php">Kembali</a></td>
                     </tr>        
                 </table>
             </div>
@@ -78,7 +78,7 @@
                 if (data.status === 'Success') {
                     alert('User berhasil ditambahkan!');
                     // You may choose to redirect or perform any other actions here
-					window.location.href = 'tampil.php';
+					window.location.href = 'login.php';
                 } else {
                     alert('Gagal menambahkan user. Silakan coba lagi.');
                 }

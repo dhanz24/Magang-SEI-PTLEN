@@ -38,6 +38,7 @@
           </div>
 
           <center><button type="button" class="btn" onclick="login()">Login</button></center>
+          <center><a href="Register.php">Register disini</a></center>
 
         </div>
       </div>
